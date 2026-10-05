@@ -4,7 +4,7 @@ export const profile = {
   title: "Software Engineer (Full-Stack & AI/ML)",
   photo: "/profile.jpg",
   about:
-    "Software engineering trainee at AkiraChix (Class of 2026) with hands-on projects across web, APIs, IoT and machine learning. Shipped a skin-lesion classifier, a Flutter maternal-health app and an XGBoost pricing model; comfortable owning work from raw data to deployed app.",
+    "I am an entry-level software engineer who loves solving problems and building systems that make a real difference to people's lives. At AkiraChix I have worked on the frontend, the APIs behind it, and the devices that send data to the backend. That experience taught me to think about how each part connects, where the data comes from, and what happens when the internet fails. I hold my work to honest standards, documenting limitations rather than overselling results, and I thrive where problems are open-ended.",
   contact: {
     email: "ornellaleilla@gmail.com",
     phone: "+250 795 340 956",
@@ -36,14 +36,14 @@ export const profile = {
     role: "Software Engineering Intern, AkiraChix training programme",
     dates: "January 2026 – Present",
     org: "AkiraChix",
-    bullets: [
-      "Built Stanaland Tour and Travel solo: a booking platform for airport transfers, hotels and tour guides with REST APIs for staff, in HTML, CSS and JavaScript.",
-      "Wired ESP32 microcontrollers to live cloud dashboards so device status checks ran from any browser instead of a site visit.",
-      "Engineered the data pipeline for a movie recommender, cleaning raw user preferences into model-ready inputs.",
-      "Shipped three machine learning projects in Python (scikit-learn, XGBoost, Streamlit), each documented on GitHub.",
-      "Wrote Pytest unit tests across projects, catching regressions before release.",
-      "Worked in two-week sprints with planning sessions and peer code reviews.",
-    ],
+      bullets: [
+        "I built Stanaland Tour and Travel in HTML, CSS and JavaScript. It books airport transfers, hotels and tour guides, and I also wrote the REST APIs staff use to manage the bookings.",
+        "Connected ESP32 microcontrollers to cloud dashboards, so device status can be checked from a browser instead of a physical site visit.",
+        "Prepared the data for a movie recommender: I filled in missing values, converted categories into numbers the model can read, and scaled the features before training.",
+        "Built a Titanic survival classifier and other machine learning projects in Python, using scikit-learn, XGBoost and Streamlit.",
+        "Wrote unit tests with Pytest in my projects to catch bugs before they reach users.",
+        "Worked in two-week sprints, with planning sessions and code reviews from teammates.",
+      ],
   },
   projects: [
     {
@@ -51,8 +51,8 @@ export const profile = {
       stack: "Python, scikit-learn, Streamlit",
       summary: "Flags suspicious skin marks for early review. Demo only, not a diagnostic tool.",
       bullets: [
-        "Trained on 300 dermatologist-labelled images, class-balanced; reached ~65% accuracy on held-out data and documented the limitation; next step is more training data.",
-        "Shared one preprocessing pipeline between training and the live Streamlit app so deployed predictions match training behaviour.",
+        "Trained the model on 300 dermatologist-labelled images, balanced across classes. It reaches about 65% accuracy on held-out data, which I note openly; more training data is the next step.",
+        "Used the same preprocessing steps for training and for the live Streamlit app, so what the demo predicts matches how the model learned.",
       ],
     },
     {
@@ -60,8 +60,8 @@ export const profile = {
       stack: "Flutter, Dart, FastAPI, PostgreSQL",
       summary: "Team project. Maternal-health mobile app connecting community health workers with expectant mothers in the field.",
       bullets: [
-        "Built the mobile screens for mother registration and antenatal visit logging in Flutter, with data flowing into a FastAPI backend on PostgreSQL.",
-        "Contributed the pregnancy risk assessment flow, letting CHVs flag high-risk mothers during field visits for follow-up.",
+        "Built the mother registration and antenatal visit screens in Flutter, connected to a FastAPI backend that stores data in PostgreSQL.",
+        "Worked on the pregnancy risk assessment part, which lets CHVs mark high-risk mothers during field visits so they can be followed up.",
       ],
     },
     {
@@ -69,8 +69,8 @@ export const profile = {
       stack: "Python, FastAPI, SQLAlchemy",
       summary: "Backend point-of-sale system built solo on a modular FastAPI architecture.",
       bullets: [
-        "Implemented product registration, sales processing, user roles and inventory tracking as separate FastAPI routers with SQLAlchemy persistence.",
-        "Structured the codebase in layers (routers, schemas, services, repositories) so business logic stays independent of the API endpoints.",
+        "Built product registration, sales, user roles and inventory tracking as separate FastAPI routes, storing the data with SQLAlchemy.",
+        "Kept the code in clear layers (routes, schemas, services, repositories) so the business rules don't depend on the API.",
       ],
     },
     {
@@ -78,8 +78,8 @@ export const profile = {
       stack: "React, Vite, PWA",
       summary: "Installable Progressive Web App for a chicken restaurant in Rubaga, Kampala.",
       bullets: [
-        "Built the site with Vite and React, configured as a PWA so previously visited pages load offline and the app installs to the home screen.",
-        "Added install prompts for eligible visitors, letting repeat customers launch the restaurant app like a native one.",
+        "Built the site with Vite and React and set it up as a PWA: pages you have already visited load offline, and the app installs on the home screen.",
+        "Added an install prompt that asks visitors if they want to add the app to their phone's home screen, so they can open it like a normal app without going through the browser.",
       ],
     },
     {
@@ -87,8 +87,8 @@ export const profile = {
       stack: "Python, XGBoost, scikit-learn",
       summary: "",
       bullets: [
-        "Predicted sale prices from 1,460 public home records; feature engineering and model comparison delivered predictions within ~11% of true sale prices, with a factor-ranking summary for interpretability.",
-        "Engineered features from 1,460 public home records and compared candidate models in Python, selecting XGBoost for accuracy and a factor-ranking summary for interpretability.",
+        "Predicted house sale prices from 1,460 public records. After feature work and comparing a few models, the predictions landed within about 11% of the real sale price.",
+        "Tried a few models in Python and settled on XGBoost, then wrote a short summary of which features mattered most to the predictions.",
       ],
     },
   ],
